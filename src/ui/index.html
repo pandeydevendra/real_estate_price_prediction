@@ -1,1 +1,36 @@
-##price prediction ui
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delhi Rent Price Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Delhi Rent Price Finder</h1>
+    <p>Search average monthly rent in Delhi</p>
+
+    <!-- Search Form -->
+    <div class="search-box">
+      <input type="text" id="localityInput" placeholder="Enter locality (e.g. Dwarka)" />
+
+      <select id="bhkType">
+        <option value="">Select BHK</option>
+        <option value="1BHK">1 BHK</option>
+        <option value="2BHK">2 BHK</option>
+        <option value="3BHK">3 BHK</option>
+        <option value="4BHK">4 BHK</option>
+      </select>
+
+      <button id="searchBtn">Search Rent</button>
+    </div>
+
+    <!-- Result -->
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
